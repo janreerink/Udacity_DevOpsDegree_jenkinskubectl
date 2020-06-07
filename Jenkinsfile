@@ -10,7 +10,6 @@ pipeline {
                 //sh "mkdir -p /home/.kube/"
                 //sh "cp /kubecfg/test.conf /home/.kube/config"
                 sh "kubectl config view"
-                
                 sh "kubectl version"
                 //sh "kubectl get nodes"
                 //sh "kubectl run nginx  --replicas=2 --labels='app=nginx' --image=nginx --port=80"
