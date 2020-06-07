@@ -7,6 +7,7 @@ pipeline {
             steps {
                 //sh "/usr/bin//kubectl cluster-info"
                 sh "export KUBECONFIG=/kubecfg/test.conf"
+                sh "cp /kubecfg/test.conf \\\$HOME/.kube/config"
                 sh "kubectl config view"
                 
                 sh "kubectl version"
